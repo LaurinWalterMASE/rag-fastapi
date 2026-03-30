@@ -1,0 +1,26 @@
+# Environment Variables
+.env
+
+# Virtual Environment
+rag_env/
+
+# Python Cache
+__pycache__/
+
+# Chroma Database
+chroma_db/
+
+# Node.js / Frontend
+node_modules/
+npm-debug.log*
+yarn-error.log*
+dist/
+build/
+.next/
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE specific
+.vscode/
