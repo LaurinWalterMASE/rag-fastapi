@@ -5,12 +5,7 @@ export default function Ingest() {
   const [file, setFile] = useState(null);
   const [result, setResult] = useState("");
 
-  const handleUpload = async () => {
-    if (!file) {
-      setResult("Please select a file");
-      return;
-    }
-
+  const handleIngest = async () => {
     try {
       const res = await ingestPDF(file);
       setResult(JSON.stringify(res.data, null, 2));
@@ -21,15 +16,12 @@ export default function Ingest() {
 
   return (
     <div>
-      <h2> Upload PDF</h2>
-
+      <h2>Ingest PDF</h2>
       <input
         type="file"
-        accept="application/pdf"
         onChange={(e) => setFile(e.target.files[0])}
       />
-
-      <button onClick={handleUpload}>Upload & Ingest</button>
+      <button onClick={handleIngest}>Ingest</button>
 
       <pre>{result}</pre>
     </div>
