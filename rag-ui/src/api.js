@@ -1,3 +1,9 @@
+import axios from "axios";
+
+const API = axios.create({
+  baseURL: "https://rag-fastapi-gpj3.onrender.com",
+});
+
 export const ingestPDF = (file) => {
   const formData = new FormData();
   formData.append("file", file);
@@ -8,3 +14,6 @@ export const ingestPDF = (file) => {
     },
   });
 };
+
+export const queryLLM = (query) =>
+  API.post("/query", { query });
