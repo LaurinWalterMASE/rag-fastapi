@@ -13,7 +13,7 @@ from langchain_google_genai import (
 )
 
 
-os.environ["GEMINI_API_KEY"] = "YOUR_API_KEY_HERE"
+os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY")
 
 UPLOAD_DIR = "uploads"
 DB_DIR = "db"
