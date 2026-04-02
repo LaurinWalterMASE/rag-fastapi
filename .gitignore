@@ -1,14 +1,32 @@
 # Environment Variables
 .env
+.env.*
+!.env.example
+
+# Local scratch / sample files
+cmd_commands.txt
+finazamt.pdf
 
 # Virtual Environment
 rag_env/
 
 # Python Cache
 __pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
 
 # Chroma Database
 chroma_db/
+db/
+*.db
+*.sqlite
+*.sqlite3
+uploads/
 
 # Node.js / Frontend
 node_modules/
@@ -24,3 +42,4 @@ Thumbs.db
 
 # Editor/IDE specific
 .vscode/
+.idea/

@@ -1,2 +1,0 @@
-curl -X POST "http://127.0.0.1:8000/ingest" -H "Content-Type: application/json" -d "{\"file_path\": \"C:\\Users\\LRW\\Documents\\HochschuleBurgenland\\MASE\\2_Semester\\AAIA\\EX1\\finazamt.pdf\"}"
-
